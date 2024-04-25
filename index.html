@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAMBIO DE DIVISAS</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CAMBIO DE DIVISAS</h1>
+      <form id="currencyConverter">
+        <label for="amount">Cantidad:</label>
+        <input
+          type="number"
+          id="amount"
+          placeholder="Ingrese la cantidad"
+          required
+        />
+
+        <label for="fromCurrency">De:</label>
+        <select id="fromCurrency" required>
+          <option value="USD">Dólar americano (USD)</option>
+          <option value="CLP">Peso Chileno (CLP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra esterlina (GBP)</option>
+          <option value="CHF">Franco suizo (CHF)</option>
+          <option value="JPY">Yen japonés (JPY)</option>
+          <option value="CNY">Yuan chino (CNY)</option>
+          <option value="COP">Peso colombiano (COP)</option>
+          <option value="ARS">Peso argentino (ARS)</option>
+          
+        </select>
+
+        <label for="toCurrency">A:</label>
+        <select id="toCurrency" required>
+          <option value="USD">Dólar americano (USD)</option>
+          <option value="CLP">Peso Chileno (CLP)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra esterlina (GBP)</option>
+          <option value="CHF">Franco suizo (CHF)</option>
+          <option value="JPY">Yen japonés (JPY)</option>
+          <option value="CNY">Yuan chino (CNY)</option>
+          <option value="COP">Peso colombiano (COP)</option>
+          <option value="ARS">Peso argentino (ARS)</option>
+          <option value="CLP">Peso Chileno (CLP)</option>
+        </select>
+
+        <button type="button" onclick="convertCurrency()">Convertir</button>
+      </form>
+
+      <div id="result"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
